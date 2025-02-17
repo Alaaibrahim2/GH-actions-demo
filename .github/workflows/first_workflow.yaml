@@ -1,9 +1,10 @@
 name: firstworkflow
+
 on:
   push:
     branches:
       - "main"
-  repository_dispatch:  # ✅ تصحيح اسم الحدث
+  repository_dispatch:
     types: [test]
 
 jobs:
