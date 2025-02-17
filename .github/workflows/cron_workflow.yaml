@@ -1,7 +1,7 @@
 name: cron workflow
 on:
   schedule:
-    - cron: "*/5 * * * *"  # تشغيل كل 5 دقائق
+    - cron: "0/5 * * * *"  # تشغيل كل 5 دقائق
 
 jobs:
   cron_workflow:
