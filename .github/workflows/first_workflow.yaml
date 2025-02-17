@@ -1,11 +1,11 @@
 name: firstworkflow
 
 on:
-  push:
-    branches:
-      - "main"
-  repository_dispatch:
-    types: [test]
+  workflow_dispatch:
+    inputs:
+      versionName:
+        required: true
+        description: "this is version name"
 
 jobs:
   first-workflow-job:
