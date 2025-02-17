@@ -3,6 +3,9 @@ on:
   push:
     branches:
       - "main"
+  repository_dispatch:  # ✅ تصحيح اسم الحدث
+    types: [test]
+
 jobs:
   first-workflow-job:
     name: first-job
